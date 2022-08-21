@@ -1,0 +1,180 @@
+/* import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+:root {
+    --clr-primary-400: hsl(25, 97%, 53%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(215, 9%, 62%);
+    --clr-neutral-300: hsl(210, 19%, 18%);
+    --clr-neutral-400: hsl(215, 25%, 13%);
+    --clr-neutral-500: hsl(228, 11%, 9%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--clr-neutral-500);
+    color: var(--clr-neutral-200);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary-400);
+}
+
+.card {
+    display: flex;
+    max-width: 28rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--clr-neutral-400);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.card-icon {
+    background-color: var(--clr-neutral-300);
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 100vw;
+}
+
+.card-heading {
+    color: var(--clr-neutral-100);
+}
+
+.button-primary {
+    background-color: var(--clr-primary-400);
+    border: none;
+    padding: 0.5em;
+    color: var(--clr-neutral-100);
+    font-weight: bold;
+    border-radius: 100rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-primary:hover,
+.button-primary:active {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-400);
+}
+
+.rating-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-button {
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-200);
+    border: none;
+    height: 3em;
+    width: 3em;
+    border-radius: 100vw;
+    cursor: pointer;
+}
+
+.rating-button:hover,
+.rating-button:focus {
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-neutral-100);
+}
+
+.rating-button.selected {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+}
+
+.highlight {
+    background-color: var(--clr-neutral-300);
+    border-radius: 100vw;
+    color: var(--clr-primary-400);
+    width: fit-content;
+    padding-inline: 0.75rem;
+    padding-block: 0.5rem;
+    margin-inline: auto;
+}
+
+.container {
+
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* utility classes */
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}

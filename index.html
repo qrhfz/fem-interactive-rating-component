@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Rating state start -->
+
+    <div id="rating-card" class="card">
+      <div class="card-icon">
+        <img src="images/icon-star.svg" alt="star icon" />
+      </div>
+      <div class="card-heading">
+        <h2>How did we do?</h2>
+      </div>
+
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <div class="rating-bar">
+        <button class="rating-button">1</button>
+        <button class="rating-button">2</button>
+        <button class="rating-button">3</button>
+        <button class="rating-button">4</button>
+        <button class="rating-button">5</button>
+      </div>
+
+      <button class="button-primary" id="submit-button">
+        Submit
+      </button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div id="thank-you-card" class="card text-center justify-center hidden">
+
+      <div>
+        <img src="images/illustration-thank-you.svg" alt="Thank you!" style="margin-inline:auto;" />
+      </div>
+
+      <div class="highlight">
+        You selected
+        <span id="selected-rating-number"></span> out of 5
+      </div>
+
+      <div class="card-heading">
+        <h2>
+          Thank you!
+        </h2>
+      </div>
+
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </div>
+
+
+    <!-- Thank you state end -->
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/qrhfz">Qori El-Hafizh</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
